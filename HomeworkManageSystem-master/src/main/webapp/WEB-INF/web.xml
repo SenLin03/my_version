@@ -40,7 +40,7 @@
     </filter-mapping>
     <!-- servlet end -->
 
-    <!-- shiro   -->
+    <!-- shiro filter  -->
     <filter>
         <filter-name>shiroFilter</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
@@ -82,7 +82,7 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <!-- druid监控配置 -->
+    <!-- druid stat view -->
     <servlet>
         <servlet-name>DruidStatView</servlet-name>
         <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
@@ -96,7 +96,7 @@
         <url-pattern>/druid/*</url-pattern>
     </servlet-mapping>
 
-    <!-- Xss过滤 -->
+    <!-- Xss filter -->
     <filter>
         <filter-name>XssSqlFilter</filter-name>
         <filter-class>com.david.common.filter.XssFilter</filter-class>
