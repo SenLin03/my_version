@@ -3,6 +3,9 @@ package com.david.common.utils;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpDelete;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpPut;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -34,8 +37,12 @@ public class HttpClientUtil {
         return  result;
     }
 
+
     public static void main(String[] args) {
         String get = doGet("http://api.openweathermap.org/data/2.5/weather?id=2147714&appid=43aacfb6fa831b24200a39d2d4351449");
         System.out.println(get);
+
+        String get2 = doGet("http://api.yeelink.net/v1.0/device/360458/sensor/411255/datapoints");
+        System.out.println(get2);
     }
 }
