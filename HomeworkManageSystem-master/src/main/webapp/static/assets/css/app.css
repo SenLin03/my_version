@@ -639,7 +639,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
   display: block;
 }
 .theme-white {
-  background: #e9ecf3;
+  background: #ffff00;
 }
 .theme-white .sidebar-nav-sub .sidebar-nav-link-logo {
   margin-left: 10px;
@@ -669,7 +669,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
   color: #96a2b4;
 }
 .theme-white .tpl-calendar-box {
-  background: #fff;
+  background:#ffff00;
   border-radius: 4px;
   padding: 20px;
 }
@@ -682,14 +682,14 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
   color: #868E8E;
 }
 .theme-white .tpl-calendar-box .fc-unthemed .fc-today {
-  background: #eee;
+  background: #ffff00;
 }
 .theme-white .tpl-calendar-box .fc-more {
   color: #868E8E;
 }
 .theme-white .tpl-calendar-box .fc th.fc-widget-header {
   background: #32c5d2!important;
-  color: #ffffff;
+  color: #ffff00;
   font-size: 14px;
   line-height: 20px;
   padding: 7px 0px;
@@ -1196,7 +1196,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
   border-bottom: 1px solid #eee;
 }
 .theme-white .tpl-content-wrapper {
-  background: #e9ecf3;
+  background: #ffff00;
 }
 .theme-white .tpl-header-fluid {
   background: #fff;
