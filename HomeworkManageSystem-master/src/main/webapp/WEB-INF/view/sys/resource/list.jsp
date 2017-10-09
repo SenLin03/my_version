@@ -12,7 +12,7 @@
 <body>
 <script src="${ctxStatic}/assets/js/theme.js"></script>
 <div class="am-g tpl-g">
-	<!-- 内容区域 -->
+	<!-- Content area -->
 	<div class="tpl-content-wrapper">
 		<div class="row-content am-cf">
 			<div class="row">
@@ -23,7 +23,7 @@
 						</div>
 						<div class="widget-body widget-body-lg am-fr">
 							<div class="am-scrollable-horizontal">
-								<ul id="tree" class="ztree"></ul><!-- 资源树 -->
+								<ul id="tree" class="ztree"></ul>
 							</div>
 						</div>
 					</div>
@@ -109,37 +109,37 @@
 <%@ include file="../../include/bottom.jsp"%>
 <script src="${ctxStatic}/3rd-lib/jquery-ztree/js/jquery.ztree.core-3.5.min.js"></script>
 <script>
-	$(function () {
-		var setting = {
-			data: {
-				simpleData: {
-					enable: true
-				}
-			},
-			callback : {
-				onClick : function(event, treeId, treeNode) {
-					location.href = "${ctx}/resource?id="+treeNode.id;
-				}
-			}
-		};
-		var zNodes =[
-			<c:forEach items="${resourceList}" var="o" varStatus="status">
-			{ id:${o.id}, pId:${o.parentId}, name:"${o.name}", open:${o.rootNode}}<c:if test="${!status.last}">,</c:if>
-			</c:forEach>
-		];
-		$(document).ready(function(){
-			var ztree = $.fn.zTree.init($("#tree"), setting, zNodes);
-			ztree.expandAll(true);
-		});
-	});
+    $(function () {
+        var setting = {
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            },
+            callback : {
+                onClick : function(event, treeId, treeNode) {
+                    location.href = "${ctx}/resource?id="+treeNode.id;
+                }
+            }
+        };
+        var zNodes =[
+            <c:forEach items="${resourceList}" var="o" varStatus="status">
+            { id:${o.id}, pId:${o.parentId}, name:"${o.name}", open:${o.rootNode}}<c:if test="${!status.last}">,</c:if>
+            </c:forEach>
+        ];
+        $(document).ready(function(){
+            var ztree = $.fn.zTree.init($("#tree"), setting, zNodes);
+            ztree.expandAll(true);
+        });
+    });
 </script>
 <script>
-	$(document).ready(function () {
-		var msg = '${msg}';
-		if(msg!=''){
-			showMsg(msg);
-		}
-	});
+    $(document).ready(function () {
+        var msg = '${msg}';
+        if(msg!=''){
+            showMsg(msg);
+        }
+    });
 </script>
 </body>
 </html>
