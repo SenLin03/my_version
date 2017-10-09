@@ -19,37 +19,37 @@ import java.io.IOException;
 public abstract class BaseController {
 
 	/**
-	 * 日志对象
+	 * Log object
 	 */
 	protected Logger logger = LoggerFactory.getLogger(getClass());
 
 	/**
-	 * 管理基础路径
+	 * Manage the underlying path
 	 */
 	@Value("${adminPath}")
 	protected String adminPath;
 
 	/**
-	 * 前端基础路径
+	 * Front-end base path
 	 */
 	@Value("${frontPath}")
 	protected String frontPath;
 
 	/**
-	 * rest接口路径
+	 * rest interface path
 	 */
 	@Value("${restPath}")
 	protected String restPath;
 
 	/**
-	 * 前端URL后缀
+	 * Front URL suffix
 	 */
 	@Value("${urlSuffix}")
 	protected String urlSuffix;
 
 	/**
-	 * 客户端返回JSON字符串
-	 * 
+	 * The client returns a JSON string
+	 *
 	 * @param response
 	 * @param object
 	 * @return
@@ -60,7 +60,7 @@ public abstract class BaseController {
 	}
 
 	/**
-	 * 返回JSONP的数据
+	 * Returns the JSONP data
 	 *
 	 * @param response
 	 * @param object
@@ -68,21 +68,21 @@ public abstract class BaseController {
 	 * @return
 	 */
 	protected String renderString(HttpServletResponse response, Object object,
-			String callback) {
+								  String callback) {
 		return renderString(response,
 				callback + "(" + JsonMapper.toJsonString(object) + ")",
 				"application/text");
 	}
 
 	/**
-	 * 客户端返回字符串
-	 * 
+	 * The client returns a string
+	 *
 	 * @param response
 	 * @param string
 	 * @return
 	 */
 	protected String renderString(HttpServletResponse response, String string,
-			String type) {
+								  String type) {
 		try {
 			response.reset();
 			response.setContentType(type);
@@ -95,7 +95,7 @@ public abstract class BaseController {
 	}
 
 	/**
-	 * 获得用户远程地址
+	 * Get the user's remote address
 	 */
 	public static String getRemoteAddr(HttpServletRequest request) {
 		String remoteAddr = request.getHeader("X-Real-IP");
@@ -110,8 +110,8 @@ public abstract class BaseController {
 	}
 
 	/**
-	 * 添加Model消息
-	 * 
+	 * Add a Model message
+	 *
 	 * @param messages
 	 */
 	protected void addMessage(Model model, String... messages) {
@@ -123,12 +123,12 @@ public abstract class BaseController {
 	}
 
 	/**
-	 * 添加Flash消息
-	 * 
+	 * Add a Flash message
+	 *
 	 * @param messages
 	 */
 	protected void addMessage(RedirectAttributes redirectAttributes,
-			String... messages) {
+							  String... messages) {
 		StringBuilder sb = new StringBuilder();
 		for (String message : messages) {
 			sb.append(message).append(messages.length > 1 ? "<br/>" : "");
