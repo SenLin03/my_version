@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 基础控制器类
- * 
+ * Basic controller class
+ *
  * @author David
  */
 public abstract class BaseController {
