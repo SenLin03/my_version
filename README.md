@@ -1,8 +1,8 @@
 #Homework Management System
 Homework Management System
 This system is aiming to provide a basic forum for
-<br>	Students to discuss and upload homework
-<br>	Teachers to manage the student users
+<br>	1.Students to discuss and upload homework
+<br>	2.eachers to manage the student users
 
 It is based on Idea + Maven + SSM (Spring+Spring MVC+ MyBatis) + shiro + mysql + tomcat. The front-end UI uses AmazeUI. Cloud host uses AWS.
 <br><br>	Environment set up: http://blog.csdn.net/gallenzhang/article/details/51932152
@@ -32,7 +32,7 @@ View(JSP pages)，in the view directory
 ▼
 <br>Entity Layer（JavaBean），in the entity directory
  
-When modifying the layers, it is recommended to modify from the bottom layer to the top layer
+<br>When modifying the layers, it is recommended to modify from the bottom layer to the top layer
 
 **Entity Layer**
 1.	First, Modify the entity
@@ -43,33 +43,33 @@ When modifying the layers, it is recommended to modify from the bottom layer to 
 d)	Then, modify the Page class
 <br>MyBatis Interceptor prepares the sql requests and separates it in pages
 public class Page<T>
-　　　　			List<T> pageNo, pageSize, total
+　　　　			<br>List<T> pageNo, pageSize, total
 
 **Data persistence layer，**
-2.	Modify the IUserDao
+<br>2.	Modify the IUserDao
 <br>a)	get user information based on user name, email
 3.	Modify the IRoleDao, IHomeworkDao
 <br>a)	Get the permission resource ID
 ...
 
 **Business logic Layer**, service，mainly for Authentication
-4.	Modify the UserService
+<br>4.	Modify the UserService
 <br>a)	Change password …
 <br>b)	Modify the HomeworkService, dd HomeworkCommentService
-5.	Modify the HomeworkService, HomeworkCommentService (common/service)
+<br>5.	Modify the HomeworkService, HomeworkCommentService (common/service)
 <br>a)	Query paging data 
 …
 
 **Controller Layer**, response to the request, implement the CRUD method
-6.	LoginController
+<br>6.	LoginController
         <br>b)	User registration
 <br>c)	forget password
-7.	HomworkController, UserController, RoleController, etc
+<br>7.	HomworkController, UserController, RoleController, etc
 <br>a)	Create the homework, User, Role
 <br>b)	Read the home work, User, Role
 <br>c)	Update the homework, User, Role
 d)	Delete the homework, User, Role
-8.	UserController，all the request from the /user，which follows the RequestMapping in the MVC framework
+<br>8.	UserController，all the request from the /user，which follows the RequestMapping in the MVC framework
 <br>a)	Request / create (RequestMethodGET, POSt)
 <br>b)	Request / update (RequestMethodGET, POSt)
 <br>c)	Request / delete (RequestMethodGET)
