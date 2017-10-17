@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16384b09-401b-4b36-9e98-115af1a9e759" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HomeworkManageSystem-master-2/README.md" afterPath="$PROJECT_DIR$/HomeworkManageSystem-master-2/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HomeworkManageSystem-master-2/src/main/webapp/WEB-INF/tld/fnc.tld" afterPath="$PROJECT_DIR$/HomeworkManageSystem-master-2/src/main/webapp/WEB-INF/tld/fnc.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

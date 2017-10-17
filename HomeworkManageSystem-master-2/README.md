@@ -204,6 +204,16 @@ It uses MySql as database
 
 
 References
+
+demo
+School project
+Spring+SpringMVC+Mybatis for school
+
+Study_Framework
+http://code.taobao.org/p/study_framework/diff/2/trunk/src/main/java/com/afeng/
+readme
+http://www.cnblogs.com/tonglin0325/p/6242420.html
+
 验证码
 http://www.cnblogs.com/durui/p/7627226.html
 
@@ -234,6 +244,35 @@ DataSourceContextHolder
 DynamicDataSource
 http://blog.csdn.net/gaofuqi/article/details/46417281
 http://blog.csdn.net/wangpeng047/article/details/43450189
+http://blog.csdn.net/songsongmianbao/article/details/50763392
 
 shiro setting and userRealm
 http://www.jianshu.com/p/0083e0171643
+http://www.cnblogs.com/question-sky/p/6806419.html
+http://blog.csdn.net/u013412066/article/details/50676079
+
+Login/Register
+http://blog.csdn.net/Marksinoberg/article/details/51482079
+http://www.cnblogs.com/admol/articles/4199546.html
+http://blog.csdn.net/owen_william/article/details/51592931
+http://blog.csdn.net/buyaore_wo/article/details/50056353
+
+shiro setting and session time
+http://blog.csdn.net/u013412066/article/details/50676079
+
+jackson mapper
+http://blog.csdn.net/jilongliang/article/details/42888925
+ 
+login/IUserDao/IUserService/page/ layer design/ demo /tutoril
+http://www.cnblogs.com/tonglin0325/p/6242420.html
+
+Spring cache ultil
+http://www.bubuko.com/infodetail-1189530.html
+http://blog.csdn.net/huanghongfei1/article/details/61195650
+
+mybatis crud
+http://blog.csdn.net/hcmdy/article/details/50678509
+
+ HttpServletRequestWrapper for prevent injection
+http://blog.csdn.net/mid120/article/details/53897550
+http://www.cnblogs.com/zdd-java/p/7528496.html
