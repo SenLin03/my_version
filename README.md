@@ -8,7 +8,8 @@ It is based on Idea + Maven + SSM (Spring+Spring MVC+ MyBatis) + shiro + mysql +
 <br><br>	Environment set up: http://blog.csdn.net/gallenzhang/article/details/51932152
 <br>	AmazeUI Introduction (http://amazeui.org/getting-started
 <br>	Download: https://github.com/amazeui
-<br>	Cloud host address: 
+<br>	Cloud host address: http://13.59.60.98/homework/homework/login
+
 
 **Request Flow**
 <br>View    ->   controller   ->   service   ->   dao    ->   entity
@@ -77,6 +78,7 @@ d)	Delete the homework, User, Role
 
 For examples, in the request /*, if the request is /login, there is a Ajax login failed  handling。It calls the user service, the getter from UserUtils.getLoginUserName(), if the name does not match the database, the controller then throws an exception, username or password is incorrect.
 	
+Email-based password reset feature 
 If the request is /forgetpassword, it will use the userService to get user by user email to match the user. If such users exist and match, the email will be formed with a random password by using the randomString in the randomUtils service.
  
 Sending the value from the model/entity send, through the Controller, to the View. Attributes obtained in the jsp ${}, remember to add the Annotations, @Controller @RequestMapping, @Service, it use such Annotationa to set up the each layer including the controller.
@@ -91,6 +93,7 @@ Sending the value from the model/entity send, through the Controller, to the Vie
 **Database Layer**
 It uses MySql as database
 	Database specification is in the db directory which includes tables and attributes.
+
 
 
 
