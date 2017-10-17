@@ -218,6 +218,7 @@ http://www.cnblogs.com/durui/p/7627226.html
 
 Exceptions
 http://blog.csdn.net/Mooner_guo/article/details/41979181
+
 Exceptions & PropertiesLoader
 https://www.javatips.net/api/bbks-master/src/main/java/com/fang/bbks/common/utils/PropertiesLoader.java
 Date Utils
@@ -228,3 +229,11 @@ https://www.javatips.net/api/bbks-master/src/main/java/com/fang/bbks/common/util
 
 Spring MVC Login
 http://www.cnblogs.com/tonglin0325/p/6242420.html
+
+DataSourceContextHolder
+DynamicDataSource
+http://blog.csdn.net/gaofuqi/article/details/46417281
+http://blog.csdn.net/wangpeng047/article/details/43450189
+
+shiro setting and userRealm
+http://www.jianshu.com/p/0083e0171643

@@ -46,7 +46,8 @@ public class Page<T>
 　　　　			<br>List<T> pageNo, pageSize, total
 
 **Data persistence layer，**
-<br>2.	Modify the IUserDao
+
+2.	Modify the IUserDao
 <br>a)	get user information based on user name, email
 3.	Modify the IRoleDao, IHomeworkDao
 <br>a)	Get the permission resource ID

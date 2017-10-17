@@ -45,7 +45,12 @@
 
     <function>
         <name>getConfig</name>
-        <function-class>com.david.common.taglib.Functions</function-class>
+        <function-class>com.david.common.taglib.FunctiThe rest interface returns the data object
+            */
+            public class ResultVo {
+            /**
+            *Results 0 - failed, 1 - successful
+            */ons</function-class>
         <function-signature>java.lang.String getConfig(java.lang.String)</function-signature>
     </function>
 
