@@ -205,16 +205,7 @@ It uses MySql as database
 
 References
 
-demo
-School project
-Spring+SpringMVC+Mybatis for school
-
-Study_Framework
-http://code.taobao.org/p/study_framework/diff/2/trunk/src/main/java/com/afeng/
-readme
-http://www.cnblogs.com/tonglin0325/p/6242420.html
-
-验证码
+JCaptcha
 http://www.cnblogs.com/durui/p/7627226.html
 
 RandomUtils
@@ -273,6 +264,24 @@ http://blog.csdn.net/huanghongfei1/article/details/61195650
 mybatis crud
 http://blog.csdn.net/hcmdy/article/details/50678509
 
- HttpServletRequestWrapper for prevent injection
+HttpServletRequestWrapper for prevent injection
 http://blog.csdn.net/mid120/article/details/53897550
 http://www.cnblogs.com/zdd-java/p/7528496.html
+
+demo
+Maven+SSM+shiro+idea+mysql+tomcat+jdk1.8
+crud project
+http://www.cnblogs.com/zdd-java/p/7528496.html
+
+Study_Framework
+http://code.taobao.org/p/study_framework/diff/2/trunk/src/main/java/com/afeng/
+
+crud table spring boot+spring+spring mvc+mybatis+maven
+http://www.zuidaima.com/share/3447204503538688.html
+
+
+supermarket system ssm(spring+springMVC+mybatis)
+http://mp.weixin.qq.com/s/2BvKwcFrtd4LgykFxYkzww
+
+readme
+http://www.cnblogs.com/tonglin0325/p/6242420.html
